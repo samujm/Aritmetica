@@ -5,7 +5,15 @@ public class Aritmetica {
     //Atributos de la clase
     int a; //Como es un tipo primitivo por default su valor es 0
     int b;
-
+    
+    //Constructor vacio 
+    //Solo se manda llamar cuando creamos nuestro objeto cuando ocupamos la palabra new
+    //Solo esta sirviendo para reservar espacio en memoria
+    public Aritmetica(){ //Se llama igual que la clase, no regresa ningun tipo de dato
+        System.out.println("Ejecutanto constructor");
+    }
+    
+    
     //Metodo (inicia con minuscula y despues mayuscula)
     public void sumar() { //Void para indicar que no regresa ninguna información
         int resultado = a + b;
