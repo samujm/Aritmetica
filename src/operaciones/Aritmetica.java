@@ -24,7 +24,7 @@ public class Aritmetica {
     
     //Metodo (inicia con minuscula y despues mayuscula)
     public void sumar() { //Void para indicar que no regresa ninguna información
-        int resultado = a + b;
+        int resultado = this.a + this.b;
         System.out.println("Resultado = " + resultado);
     }
 
