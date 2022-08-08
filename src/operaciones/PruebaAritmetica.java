@@ -4,15 +4,15 @@ public class PruebaAritmetica {
 
     public static void main(String[] args) {
         
-        //VARIABLES LOCALES
+        //VARIABLES LOCALES (SE ALMACENAN EN LA MEMORIA STACK)
         //Var solo puede utilizarse cuando trabajamos con variables locales, no en atributos
-        var a = 10;
+        var a = 10; 
         var b = 2;
         
         miMetodo();
         
         //Constructor vacio
-        Aritmetica aritmetica1 = new Aritmetica();
+        Aritmetica aritmetica1 = new Aritmetica(); //SE VA A LA MEMORIA HEAP
         System.out.println("aritmetica1 a: " + aritmetica1.a);
         System.out.println("aritmetica1 b: " + aritmetica1.b);
 
@@ -20,6 +20,9 @@ public class PruebaAritmetica {
         Aritmetica aritmetica2 = new Aritmetica(5, 8);
         System.out.println("aritmetica2 a: " + aritmetica2.a);
         System.out.println("aritmetica2 b: " + aritmetica2.b);
+        
+        //aritmetica1 = null; //Tampoco es común para destruir
+        //System.gc(); //Recolector de basura para que se ejecute cuando sea posible, pero no es comun
 
         /* aritmetica1.a = 3;
         aritmetica1.b = 2;
