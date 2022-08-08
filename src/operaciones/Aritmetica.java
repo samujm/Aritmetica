@@ -9,8 +9,16 @@ public class Aritmetica {
     //Constructor vacio 
     //Solo se manda llamar cuando creamos nuestro objeto cuando ocupamos la palabra new
     //Solo esta sirviendo para reservar espacio en memoria
+    //NOTA: EL CONSTRUCTOR VACIO SOLO LO CREA EL COMPILADOR SI NO SE HA CREADO NINGUN OTRO CONSTRUCTOR, EN TODO CASO NO LO CREA Y CAUSA ERROR, AQUI SE CREO EL SIGUIENTE DE ABAJO
     public Aritmetica(){ //Se llama igual que la clase, no regresa ningun tipo de dato
         System.out.println("Ejecutanto constructor");
+    }
+    
+    //Sobrecarga de constructores
+    //tiene que ver con agregar dos o mas constructores a nuestra clase
+    public Aritmetica(int a, int b){ //var no se puede utilizar para definir metodos
+        this.a = a;
+        this.b = b;
     }
     
     
